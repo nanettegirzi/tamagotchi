@@ -2,7 +2,7 @@ import {Tamagatchi} from './tamagatchi.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './styles.css';
+import './styles.css';
 
 
 
@@ -24,6 +24,7 @@ $(document).ready(function(){
       $("#playLevel").text(newTamagatchi.playLevel);
     }, 1000);
 
-    $("#stats").show();
+    $(".stats").show();
+    $(".info").hide();
   });
 });

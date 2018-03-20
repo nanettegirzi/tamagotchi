@@ -1,3 +1,24 @@
+body {
+  background-color: #EFEFEF;
+}
+
 .stats {
   display: none;
+}
+
+.dead {
+  display: none;
+}
+
+.jumbotron {
+  background-color: #CAEBF2;
+  text-align: center;
+  color: #A9A9A9;
+  font-weight: bolder;
+
+}
+
+.jumbotron h1 {
+  font-size: 75px;
+  font-family: Futura;
 }

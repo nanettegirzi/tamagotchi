@@ -3,29 +3,42 @@
 <head>
   <meta charset="utf-8">
   <!-- <link rel="stylesheet" href="styles.css"> -->
-  <title>Tamagatchi</title>
+  <title>Tamagotchi</title>
 </head>
 <body>
   <div class="container">
+    <div class="jumbotron">
+      <h1>Tamagotchi</h1>
+      <hr>
+      <p>Keep your pet alive!</p>
+    </div>
+    <div class="info">
     <form id="name">
       <div class="form-group">
-        <label for="enterName">Tamagatchi Name:</label>
+        <label for="enterName">Enter Tamagotchi Name:</label>
         <input type="text" name="enterName" id="enterName" class="form-control">
         <br>
-        <button type="submit" name="button" class="btn btn-info">Create Tamagatchi</button>
+        <button type="submit" name="button" class="btn btn-secondary">Create Tamagatchi</button>
       </div>
     </form>
-
-    <div id="nameDisplayDIV">
-      <p  id="nameDisplay"></p>
-    </div>
-
-    <div class="stats">
-      <p>Hunger Level: <span id="hungerLevel"></span></p>
-      <p>Sleep Level: <span id="sleepLevel"></span></p>
-      <p>Play Level: <span id="playLevel"></span></p>
-    </div>
   </div>
+
+  <!-- <div id="nameDisplayDIV">
+  <p  id="nameDisplay"></p>
+</div> -->
+
+<div class="stats">
+  <h1 id="nameDisplay"></h1>
+  <hr>
+  <p>Hunger Level: <span id="hungerLevel"></span></p>
+  <p>Sleep Level: <span id="sleepLevel"></span></p>
+  <p>Play Level: <span id="playLevel"></span></p>
+</div>
+
+<div class="dead">
+<h1>Oh snap! You killed your tamagotchi pet....</h1>
+</div>
+</div>
 
 </body>
 
