@@ -18,33 +18,43 @@
           <label for="enterName">Enter Tamagotchi Name:</label>
           <input type="text" name="enterName" id="enterName" class="form-control">
           <br>
-          <button type="submit" name="button" class="btn btn-secondary">Create Tamagotchi</button>
+          <button type="submit" name="button" class="btn btn-secondary" id="myTamagotchi">Create Tamagotchi</button>
         </div>
       </form>
     </div>
 
-  <div id="stats">
-    <h1 class="nameDisplay"></h1>
-    <img src="https://im-01.gifer.com/AhKf.gif" alt="dancing tamagotchi" height="100" width="100">
-    <h4>Keep <span class="nameDisplay"></span> alive by feeding it, playing with it, and letting it sleep.</h4>
-    <hr>
-    <p>Hunger Level: <span id="hungerLevel"></span></p>
-    <p>Play Level: <span id="playLevel"></span></p>
-    <p>Sleep Level: <span id="sleepLevel"></span></p>
-    <hr>
-
-    <button id="eat" type="button" class="btn btn-success">Feed</button>
-    <button id="play" type="button" class="btn btn-info">Play</button>
-    <button id="sleep" type="button" class="btn btn-primary">Sleep</button>
-  </div>
-
-  <div id="dead">
-    <h1>Oh snap! You killed <span class="nameDisplay"></span>....</h1>
+    <div id="stats">
+      <h1 class="nameDisplay"></h1>
+      <h4>Keep <span class="nameDisplay"></span> alive by feeding it, playing with it, and letting it sleep.</h4>
     <br>
-    <button id="reset"  name="button" type="button" class="btn btn-secondary">Play Again</button>
-  </div>
-</div>
+      <p>Hunger Level: <span id="hungerLevel"></span></p>
+      <div class="progress">
+        <div id="hunger-bar"class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+        <br>
+        <p>Play Level: <span id="playLevel"></span></p>
+        <div class="progress">
+          <div id="play-bar"class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+          <br>
+        <p>Sleep Level: <span id="sleepLevel"></span></p>
+        <div class="progress">
+          <div id="sleep-bar"class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <hr>
+        <br>
+        <button id="eat" type="button" class="btn btn-success">Feed</button>
+        <button id="play" type="button" class="btn btn-info">Play</button>
+        <button id="sleep" type="button" class="btn btn-primary">Sleep</button>
+      </div>
 
-</body>
+      <div id="dead">
+        <h1>Oh snap! You killed <span class="nameDisplay"></span>....</h1>
+        <br>
+        <button id="reset"  name="button" type="button" class="btn btn-secondary">Play Again</button>
+      </div>
+    </div>
 
-</html>
+  </body>
+
+  </html>
