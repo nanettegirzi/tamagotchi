@@ -10,21 +10,48 @@ $(document).ready(function(){
   $("#name").submit(function(event){
     event.preventDefault();
 
+    $("#stats").show();
+    $("#info").hide();
+
     let name = $("#enterName").val();
     let newTamagatchi = new Tamagatchi(name);
+    $("#hungerLevel").text(newTamagatchi.foodLevel);
+    $("#sleepLevel").text(newTamagatchi.sleepLevel);
+    $("#playLevel").text(newTamagatchi.playLevel);
     newTamagatchi.hungerDrain();
     newTamagatchi.sleepDrain();
     newTamagatchi.playDrain();
 
-    $("#nameDisplay").text(newTamagatchi.name);
+    $(".nameDisplay").text(newTamagatchi.name);
 
-    setInterval(function(){
+    let drain = setInterval(function(){
       $("#hungerLevel").text(newTamagatchi.foodLevel);
       $("#sleepLevel").text(newTamagatchi.sleepLevel);
       $("#playLevel").text(newTamagatchi.playLevel);
+      if(newTamagatchi.didTamagatchiDie())
+      {
+        $("#dead").show();
+        $("#stats").hide();
+        clearInterval(drain);
+      }
     }, 1000);
 
-    $(".stats").show();
-    $(".info").hide();
+    $("#eat").click(function(){
+      newTamagatchi.feed();
+    })
+
+    $("#play").click(function(){
+      newTamagatchi.play();
+    })
+
+    $("#sleep").click(function(){
+      newTamagatchi.sleep();
+    })
+
+    $("#reset").click(function(){
+      $("#dead").hide();
+      $("#info").show();
+    })
   });
+
 });

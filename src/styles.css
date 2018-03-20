@@ -2,11 +2,11 @@ body {
   background-color: #EFEFEF;
 }
 
-.stats {
+#stats {
   display: none;
 }
 
-.dead {
+#dead {
   display: none;
 }
 

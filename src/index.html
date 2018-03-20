@@ -10,34 +10,42 @@
     <div class="jumbotron">
       <h1>Tamagotchi</h1>
       <hr>
-      <p>Keep your pet alive!</p>
+      <p>Keep your digital pet alive!</p>
     </div>
-    <div class="info">
-    <form id="name">
-      <div class="form-group">
-        <label for="enterName">Enter Tamagotchi Name:</label>
-        <input type="text" name="enterName" id="enterName" class="form-control">
-        <br>
-        <button type="submit" name="button" class="btn btn-secondary">Create Tamagatchi</button>
-      </div>
-    </form>
+    <div id="info">
+      <form id="name">
+        <div class="form-group">
+          <label for="enterName">Enter Tamagotchi Name:</label>
+          <input type="text" name="enterName" id="enterName" class="form-control">
+          <br>
+          <button type="submit" name="button" class="btn btn-secondary">Create Tamagotchi</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- <div id="nameDisplayDIV">
+    <p  id="nameDisplay"></p>
+  </div> -->
+
+  <div id="stats">
+    <h1 class="nameDisplay"></h1>
+    <img src="https://im-01.gifer.com/AhKf.gif" alt="dancing tamagotchi" height="100" width="100">
+    <h4>Keep <span class="nameDisplay"></span> alive by feeding it, playing with it, and letting it sleep.</h4>
+    <hr>
+    <p>Hunger Level: <span id="hungerLevel"></span></p>
+    <p>Play Level: <span id="playLevel"></span></p>
+    <p>Sleep Level: <span id="sleepLevel"></span></p>
+    <hr>
+    <button id="eat" type="button" class="btn btn-success">Feed</button>
+    <button id="play" type="button" class="btn btn-info">Play</button>
+    <button id="sleep" type="button" class="btn btn-primary">Sleep</button>
   </div>
 
-  <!-- <div id="nameDisplayDIV">
-  <p  id="nameDisplay"></p>
-</div> -->
-
-<div class="stats">
-  <h1 id="nameDisplay"></h1>
-  <hr>
-  <p>Hunger Level: <span id="hungerLevel"></span></p>
-  <p>Sleep Level: <span id="sleepLevel"></span></p>
-  <p>Play Level: <span id="playLevel"></span></p>
-</div>
-
-<div class="dead">
-<h1>Oh snap! You killed your tamagotchi pet....</h1>
-</div>
+  <div id="dead">
+    <h1>Oh snap! You killed <span class="nameDisplay"></span>....</h1>
+    <br>
+    <button id="reset"  name="button" type="button" class="btn btn-secondary">Play Again</button>
+  </div>
 </div>
 
 </body>

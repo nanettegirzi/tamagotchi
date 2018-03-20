@@ -15,43 +15,36 @@ export class Tamagatchi
   {
     setInterval(() =>
     {this.foodLevel--;
-    }, 3000);
+    }, 1000);
   }
 
   sleepDrain()
   {
     setInterval(() =>
     {this.sleepLevel--;
-    }, 5000);
+    }, 1000);
   }
 
   playDrain()
   {
     setInterval(() =>
     {this.playLevel--;
-    }, 3000);
+    }, 1000);
   }
 
 
   //These are the functions to feed/sleep/play with the Tamagatchi
 
-  feed()
-  {
+  feed() {
     this.foodLevel += 10;
   }
 
-  sleep()
-  {
-    setInterval(() =>
-    {this.sleepLevel ++;
-    }, 500);
+  sleep() {
+    this.sleepLevel += 10;
   }
 
-  play()
-  {
-    setInterval(() =>
-    {this.playLevel += 16;
-    }, 3000);
+  play() {
+    this.playLevel += 10;
   }
 
 
