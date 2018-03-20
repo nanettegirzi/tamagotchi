@@ -1,5 +1,7 @@
 body {
   background-color: #EFEFEF;
+  color: #696969;
+  font-weight: bold;
 }
 
 #stats {
