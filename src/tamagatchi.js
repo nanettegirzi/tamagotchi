@@ -4,9 +4,9 @@ export class Tamagatchi
   constructor(name)
   {
     this.name = name;
-    this.foodLevel = 50;
+    this.foodLevel = 100;
     this.sleepLevel = 100;
-    this.playLevel = 75;
+    this.playLevel = 100;
   }
 
   //These are the drain amounts
@@ -14,21 +14,21 @@ export class Tamagatchi
   hungerDrain()
   {
     setInterval(() =>
-    {this.foodLevel--;
+    {this.foodLevel-=5;
     }, 1000);
   }
 
   sleepDrain()
   {
     setInterval(() =>
-    {this.sleepLevel--;
+    {this.sleepLevel-=2;
     }, 1000);
   }
 
   playDrain()
   {
     setInterval(() =>
-    {this.playLevel--;
+    {this.playLevel-=3;
     }, 1000);
   }
 
@@ -36,7 +36,7 @@ export class Tamagatchi
   //These are the functions to feed/sleep/play with the Tamagatchi
 
   feed() {
-    this.foodLevel += 10;
+    this.foodLevel += 20;
   }
 
   sleep() {

@@ -28,9 +28,9 @@ $(document).ready(function(){
       $("#hungerLevel").text(newTamagatchi.foodLevel);
       $("#sleepLevel").text(newTamagatchi.sleepLevel);
       $("#playLevel").text(newTamagatchi.playLevel);
-      $("#hunger-bar").css("width", newTamagatchi.foodLevel);
-      $("#play-bar").css("width", newTamagatchi.playLevel);
-      $("#sleep-bar").css("width", newTamagatchi.sleepLevel);
+      $("#hunger-bar").css("width", newTamagatchi.foodLevel + "%");
+      $("#play-bar").css("width", newTamagatchi.playLevel + "%");
+      $("#sleep-bar").css("width", newTamagatchi.sleepLevel + "%");
       if(newTamagatchi.didTamagatchiDie())
       {
         $("#dead").show();
