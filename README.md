@@ -12,10 +12,10 @@ _ The home page of the application.
 ![Home](src/img/home.png)
 
 _ Enter Tamagotchi name
-![Home](src/img/name.png)
+![Home](src/img/enter_name.png)
 
 _ Game start page
-![Home](src/img/start.png)
+![Home](src/img/start_game.png)
 
 _ Feed Tamagatchi
 ![Home](src/img/feed.png)
