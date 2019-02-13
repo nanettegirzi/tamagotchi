@@ -35,7 +35,7 @@ _ Tamagatchi died
 Run the following commands in Terminal:
 
 * $ git clone
-* $ cd tamagatchi
+* $ cd tamagotchi
 * $ npm install
 * $ npm run start
 
